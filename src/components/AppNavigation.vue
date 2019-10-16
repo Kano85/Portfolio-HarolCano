@@ -1,6 +1,7 @@
 <template>
 <span>
-  <v-navigation-drawer app v-model="drawer" class="brown lighten-2" dark disable-resize-watcher>
+  <!-- hamburger-menu small viewport -->
+  <v-navigation-drawer app v-model="drawer" class="#B3E5FC" dark disable-resize-watcher>
     <v-list>
       <template v-for="(item, index) in items">
         <v-list-tile :key="index" :to="item.url">
@@ -12,7 +13,8 @@
       </template>
     </v-list>
   </v-navigation-drawer>
-  <v-toolbar app color="brown darken-4" dark>
+<!-- toolbar top viewport -->
+  <v-toolbar app color="#b0bec5" dark>
     <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
     <v-spacer class="hidden-md-and-up"></v-spacer>
     <router-link to="/">
@@ -20,11 +22,11 @@
                     appTitle
                 }}</v-toolbar-title>
     </router-link>
-    <v-btn flat class="hidden-sm-and-down nav-menu" to="/menu" data-cy="menuBtn">Projects</v-btn>
+    <v-btn flat class="hidden-sm-and-down nav-menu" to="/menu" data-cy="menuBtn">projects</v-btn>
     <v-spacer class="hidden-sm-and-down"></v-spacer>
     <div v-if="!isAuthenticated" class="hidden-sm-and-down">
       <v-btn flat to="/sign-in" data-cy="signinBtn">SIGN IN</v-btn>
-      <v-btn color="brown lighten-3" to="/join" class="nav-join" data-cy="joinBtn">JOIN</v-btn>
+      <v-btn color="#29B6F6" to="/join" class="nav-join" data-cy="joinBtn">JOIN</v-btn>
     </div>
     <div v-else>
       <v-btn flat to="/about">PROFILE</v-btn>
@@ -42,7 +44,7 @@ export default {
       appTitle: 'Portfolio',
       drawer: false,
       items: [{
-          title: 'Menu',
+          title: 'Projects',
           url: '/menu'
         },
         {
@@ -77,5 +79,6 @@ export default {
 a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
 }
 </style>

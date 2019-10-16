@@ -1,12 +1,15 @@
 <template>
-<v-container fluid class="brown lighten-4">
+<v-container fluid class="lighten-4">
   <v-container grid-list-lg>
     <v-layout column>
-      <v-flex class="display-2 font-weight-black brown--text text-xs-center my-5">About me</v-flex>
       <v-flex>
-        <div class="headline mt-3 brown--text font-weight-bold">
+        <div class="display-4 font-weight-black white--text text-xs-left">
+          About Me
+        </div>
+        <div class="headline">
           Who I am
         </div>
+
         <p class="subheading mt-3">
           I am Harold, a Designer based in Berlin. What I most
           like about what I do is the creative processes the work
@@ -16,7 +19,7 @@
         </p>
       </v-flex>
       <v-flex>
-        <div class="headline mt-3 brown--text font-weight-bold">
+        <div class="headline">
           So here’s my journey:
         </div>
         <p class="subheading mt-3">
@@ -58,7 +61,7 @@
           Please find below a list of IT-Tools I am familiar with,
           some insights into my projects and my contact details.
         </p>
-        <div class="headline mt-3 brown--text font-weight-bold">
+        <div class="headline">
           IT Knowledge
         </div>
 
@@ -81,7 +84,7 @@
         Netfabb<br />
         Slic3r, Cura for 3D Printing optimization FDM<br />
         Basic VRAY<br />
-        <div class="headline mt-3 brown--text font-weight-bold">
+        <div class="headline">
           I am currently looking for new projects and challenges.
           Reach out to me to connect!
         </div>
@@ -100,6 +103,16 @@ export default {
 <style scoped>
 h3 {
   margin-top: 3vh;
-  color: black-brown;
+  color: #455a64;
+}
+
+.lighten-4 {
+  background-color: #b0bec5;
+}
+
+.headline {
+  margin-top: 3vh;
+  font-weight: bold;
+  color: #455a64;
 }
 </style>

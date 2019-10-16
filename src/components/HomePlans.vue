@@ -1,7 +1,9 @@
 <template>
 <v-container grid-list-lg>
   <v-layout row>
-    <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5">Projects and Works</v-flex>
+    <div class="display-4 font-weight-black black--text text-xs-center">
+      Projects
+    </div>
   </v-layout>
   <v-layout row wrap class="meal-plans">
     <!-- <v-flex xs12 sm12 md4>
@@ -61,7 +63,7 @@
         </v-card> -->
       <v-card>
         <v-responsive>
-          <img src="~@/assets/portfolio.png" height="500px" />
+          <img src="~@/assets/portfolio1.png" height="500px" />
           <v-container fill-height fluid>
             <v-layout fill-height>
               <v-flex xs12 align-end flexbox> </v-flex>
@@ -75,7 +77,7 @@
             <span class="headline white--text">Project 4</span>
             <div>
               Firebase <br />
-              Axios <br />
+              Vue.js <br />
               Vuetify <br />
               Vuex <br />
             </div>
@@ -83,7 +85,7 @@
         </v-card-text>
 
         <v-card-actions>
-          <v-btn href="https://github.com/Kano85/landing-page-haroldcano.git" text>git hub
+          <v-btn href="https://github.com/Kano85/Portfolio-HarolCano.git" text>git hub
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -96,9 +98,7 @@
           <img src="~@/assets/kugu-app.dummy.png" height="500px" />
           <v-container fill-height fluid>
             <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-
-              </v-flex>
+              <v-flex xs12 align-end flexbox> </v-flex>
             </v-layout>
           </v-container>
         </v-responsive>
@@ -108,18 +108,20 @@
             <h3 class="headline mb-0">Kugu Dashboard Dummy</h3>
             <span class="headline white--text">Project 5</span>
             <div>
-              Vue.js <br />
               Iframe <br />
               Node.js <br />
               Basic CSS - HTML <br />
+              <br />
+              The active links are under the aside menu ./Übersicht and ./Liegenschaften/Straßburger Str.9F
+
             </div>
           </div>
         </v-card-text>
 
         <v-card-actions>
-          <v-btn href="http://projekte.pages.kugu.cloud/submetering-portal-frame/" outline block color="green" @click="showRecipes('paleo')" data-cy="plansPaleoBtn">
+          <v-btn href="https://billing-gui-git.firebaseapp.com" outline block color="green" @click="showRecipes('paleo')" data-cy="plansPaleoBtn">
             Preview Weblink</v-btn>
-          <v-btn text>git hub </v-btn>
+          <v-btn href="https://github.com/Kano85/submetering.git" text>git hub </v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -130,8 +132,7 @@
           <img src="~@/assets/kugu-app.png" height="500px" />
           <v-container fill-height fluid>
             <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-              </v-flex>
+              <v-flex xs12 align-end flexbox> </v-flex>
             </v-layout>
           </v-container>
         </v-responsive>
@@ -147,15 +148,18 @@
               Element.io <br />
               Node.js <br />
               Axios <br />
+              <br />
+              The active router links are in the aside-menu  ./Liegenschafts and ./Casavi<br />
+              The different data is uploaded under ./casavi but disconnected, take a look at the code.<br />
             </div>
           </div>
         </v-card-text>
 
         <v-card-actions>
-          <v-btn href="http://projekte.pages.kugu.cloud/billing-gui/#/Uebersicht" outline block color="green" @click="showRecipes('vegan')" data-cy="plansVeganBtn">
+          <v-btn href="https://billing-gui.firebaseapp.com" outline block color="green" @click="showRecipes('vegan')" data-cy="plansVeganBtn">
             Preview Weblink
           </v-btn>
-          <v-btn href="https://github.com/Kano85/landing-page-haroldcano.git" text>git hub
+          <v-btn href="https://github.com/Kano85/billing-gui-git.git" text>git hub
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -166,8 +170,7 @@
           <img src="~@/assets/Poster.png" height="500px" />
           <v-container fill-height fluid>
             <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-              </v-flex>
+              <v-flex xs12 align-end flexbox> </v-flex>
             </v-layout>
           </v-container>
         </v-responsive>
@@ -215,4 +218,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.display-4 {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+</style>
