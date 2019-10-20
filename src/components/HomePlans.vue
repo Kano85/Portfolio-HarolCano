@@ -1,3 +1,5 @@
+
+
 <template>
 <v-container grid-list-lg>
   <v-layout row>
@@ -35,32 +37,6 @@
         </v-card>
       </v-flex> -->
     <v-flex xs12 sm12 md4>
-      <!-- <v-card>
-          <v-responsive>
-            <img src="~@/assets/voronoi-b.jpg" height="500px">
-            <v-container fill-height fluid>
-              <v-layout fill-height>
-                <v-flex xs12 align-end flexbox>
-                  <span class="headline white--text">Project 2</span>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-responsive>
-
-          <v-card-text>
-            <div>
-              <h3 class="headline mb-0">Project 2</h3>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </div>
-            </div>
-          </v-card-text>
-
-          <v-card-actions>
-            <v-btn outline block color="green" @click="showRecipes('keto')" data-cy="plansKetoBtn">Select This Project</v-btn>
-          </v-card-actions>
-        </v-card> -->
       <v-card>
         <v-responsive>
           <img src="~@/assets/portfolio1.png" height="500px" />
@@ -149,7 +125,7 @@
               Node.js <br />
               Axios <br />
               <br />
-              The active router links are in the aside-menu  ./Liegenschafts and ./Casavi<br />
+              The active router links are in the aside-menu ./Liegenschafts and ./Casavi<br />
               The different data is uploaded under ./casavi but disconnected, take a look at the code.<br />
             </div>
           </div>
@@ -164,6 +140,7 @@
         </v-card-actions>
       </v-card>
     </v-flex>
+
     <v-flex xs12 sm12 md4>
       <v-card>
         <v-responsive>
@@ -201,7 +178,36 @@
         </v-card-actions>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm12 md4></v-flex>
+    <v-flex xs12 sm12 md4>
+      <v-card>
+        <v-responsive>
+          <img src="~@/assets/adobexd.png" height="500px">
+          <v-container fill-height fluid>
+            <v-layout fill-height>
+            </v-layout>
+          </v-container>
+        </v-responsive>
+
+        <v-card-text>
+          <div>
+            <h3 class="headline mb-0">Wireframes with Adobe XD.</h3>
+            <span class="headline white--text">Project 3</span>
+            <div>
+              These are some examples of the projects that have resulted from the user Reasearch sessions
+            </div>
+          </div>
+        </v-card-text>
+
+        <v-card-actions>
+          <v-btn href="https://drive.google.com/open?id=1gNmWA-UPxWDaM74RDsa1br8qY2XVHpas" text>
+            Project1.xd
+          </v-btn>
+          <v-btn href="https://drive.google.com/open?id=1rroR7iC0HwzJJY-bDrCwpgkbO8IXciXl" text>
+            Porject2.xd
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
   </v-layout>
 </v-container>
 </template>
@@ -222,5 +228,8 @@ export default {
 .display-4 {
   text-align: center;
   margin-bottom: 5vh;
+}
+.headline {
+  font-weight: bold;
 }
 </style>

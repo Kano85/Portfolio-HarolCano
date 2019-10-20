@@ -33,11 +33,14 @@ export default {
 
 <style scoped>
 .container-contact {
-  background-color: #b0bec5;
+  background-color: #1976D2;
 }
 .headline {
     margin-top: 3vh;
     font-weight: bold;
-    color: #455a64;
+    color: white;
+}
+.subheading {
+  color: white;
 }
 </style>

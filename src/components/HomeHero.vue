@@ -31,8 +31,8 @@ export default {
   width: 100%;
   height: 100%;
   max-height: 100vh;
-}
 
+}
 .display-4 {
   padding-left: 110vh;
 }
@@ -45,6 +45,7 @@ export default {
 
 .home-hero {
   background-image: url('~@/assets/Bewerbungsfoto2.jpg');
+  background-size: cover;
   width: 100%;
   height: 100%;
   max-height: 100vh;
@@ -65,11 +66,11 @@ export default {
 
 .home-hero {
   background-image: url('~@/assets/Bewerbungsfoto.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   width: 100%;
-  max-height: 40vh;
+  height: auto;
   margin-bottom: 40vh;
+  max-height: 40vh;
   }
 
 #top-text {
@@ -92,6 +93,7 @@ export default {
   width: 100%;
   max-height: 40vh;
   margin-bottom: 90vh;
+  max-height: 40vh;
   }
 
 #top-text {

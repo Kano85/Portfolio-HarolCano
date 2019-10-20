@@ -3,10 +3,10 @@
   <v-container grid-list-lg>
     <v-layout column>
       <v-flex>
-        <div class="display-4 font-weight-black white--text text-xs-left">
+        <div class="custom-selector display-4 font-weight-black white--text text-xs-left">
           About Me
         </div>
-        <div class="headline">
+        <div class="display-1">
           Who I am
         </div>
 
@@ -19,7 +19,7 @@
         </p>
       </v-flex>
       <v-flex>
-        <div class="headline">
+        <div class="display-1">
           So here’s my journey:
         </div>
         <p class="subheading mt-3">
@@ -61,32 +61,34 @@
           Please find below a list of IT-Tools I am familiar with,
           some insights into my projects and my contact details.
         </p>
-        <div class="headline">
+        <div class="display-1">
           IT Knowledge
         </div>
+        <div class="it">
+        <h2>Programming languages</h2>
 
-        <h3>Programming languages</h3>
+          HTML5, CSS3<br />
+          Modern JavaScript ES6 (Basics)<br />
+          Vue.js including rest API, libraries and components<br />
 
-        HTML5, CSS3<br />
-        Modern JavaScript ES6 (Basics)<br />
-        Vue.js including rest API, libraries and components<br />
+          <h2>Graphic design</h2>
 
-        <h3>Graphic design</h3>
+          Illustrator, InDesign<br />
+          Whimsical (used for Research)<br />
+          Adobe XD, FIGMA (used for Wireframes, User flow)<br />
 
-        Illustrator, InDesign<br />
-        Whimsical (used for Research)<br />
-        Adobe XD, FIGMA (used for Wireframes, User flow)<br />
+          <h2>3D-Design and 3D Printing</h2>
 
-        <h3>3D-Design and 3D Printing</h3>
+          Solidworks 2015<br />
+          Rhino 6 (Grasshoper)<br />
+          Netfabb<br />
+          Slic3r, Cura for 3D Printing optimization FDM<br />
+          Basic VRAY<br />
+        </div>
 
-        Solidworks 2015<br />
-        Rhino 6 (Grasshoper)<br />
-        Netfabb<br />
-        Slic3r, Cura for 3D Printing optimization FDM<br />
-        Basic VRAY<br />
-        <div class="headline">
-          I am currently looking for new projects and challenges.
-          Reach out to me to connect!
+        <div class="notice display-1">
+          I am currently looking for new projects and challenges.<br />
+          Reach out to me to connect!<br />
         </div>
       </v-flex>
     </v-layout>
@@ -101,18 +103,47 @@ export default {
 </script>
 
 <style scoped>
-h3 {
+
+h2 {
   margin-top: 3vh;
-  color: #455a64;
+  color: white;
 }
 
 .lighten-4 {
-  background-color: #b0bec5;
+  background-color: #1976D2;
 }
 
-.headline {
+.display-1 {
   margin-top: 3vh;
   font-weight: bold;
-  color: #455a64;
+  color: white;
+}
+p {
+  color: white;
+}
+.it {
+  color: white;
+}
+.notice  {
+  text-align: center !important;
+  margin-left: 0vh !important;
+  margin-right: 0vh !important;
+}
+
+@media only screen and (min-width: 1900px) {
+
+p {
+  margin-left: 40vh;
+  margin-right: 40vh;
+  }
+.display-1 {
+  margin-left: 30vh;
+ }
+.it {
+  margin-left: 30vh;
+}
+.subheading {
+  margin-left: 30vh;
+}
 }
 </style>
